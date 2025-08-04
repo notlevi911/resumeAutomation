@@ -1,4 +1,4 @@
-**HELLO WHOEVER FOUND GOT YOURSELF IN HERE**
+**HELLO WHOEVER GOT YOURSELF IN HERE**
 
 ```
 well tbh I wanted to automate linkedin's resume too
