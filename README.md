@@ -6,6 +6,6 @@ but there is no api
 also if I want to autoamte using a bot like selenium
 I might just get banned cause of automation
 
-well ig i have to be happy with this lmao
+well ig I have to be happy with this lmao
 ```
 
