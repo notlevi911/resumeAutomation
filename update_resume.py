@@ -1,4 +1,4 @@
-from platform import portfolio
+from platforms import portfolio
 
 def main():
     portfolio.update_resume("resume.pdf")
