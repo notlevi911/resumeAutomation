@@ -7,7 +7,7 @@ def update_resume(filepath):
 
     repo_url = f"https://x-access-token:{os.getenv('GH_TOKEN')}@github.com/notlevi911/new-portfolio.git"
     repo_dir = "new-portfolio"
-    target_resume = os.path.join("frontend", "public", "Resume (1).pdf")  # keep same name
+    target_resume = os.path.join("frontend", "public", "resume.pdf")  # keep same name
 
     # Remove old clone if exists
     if os.path.exists(repo_dir):
