@@ -7,7 +7,7 @@ def update_resume(filepath):
 
     repo_url = f"https://x-access-token:{os.getenv('GH_TOKEN')}@github.com/notlevi911/new-portfolio.git"
     repo_dir = "new-portfolio"
-    target_resume = os.path.join("frontend", "public", "resume.pdf")  # keep same name
+    target_resume = os.path.join("frontend", "public", "Resume (1).pdf")  # target filename should be Resume (1).pdf
 
     # Remove old clone if exists
     if os.path.exists(repo_dir):
@@ -17,7 +17,7 @@ def update_resume(filepath):
     subprocess.run(["git", "clone", repo_url])
     os.chdir(repo_dir)
 
-    # Copy Resume (1).pdf into frontend/public as Resume (1).pdf
+    # Copy resume.pdf into frontend/public as Resume (1).pdf
     shutil.copy(f"../{filepath}", target_resume)
 
     # Stage changes
@@ -30,7 +30,7 @@ def update_resume(filepath):
     # Commit (only if there are changes)
     commit_result = subprocess.run(["git", "diff", "--cached", "--quiet"])
     if commit_result.returncode != 0:  # changes exist
-        subprocess.run(["git", "commit", "-m", "🔄 Auto-updated resume"])
+        subprocess.run(["git", "commit", "-m", "🔄 Auto-updated Resume (1).pdf"])
         subprocess.run(["git", "push"])
         print("✅ Resume (1).pdf updated and pushed to new-portfolio!")
     else:
